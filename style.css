@@ -1,0 +1,124 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: #a520d1;
+    color: rgb(46, 48, 48)
+}
+
+.header {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    line-height: 1em;
+}
+.container {
+    display: flex;
+    width: 69%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 4px solid rgb(46,48,48);
+    border-radius: 6px;
+    padding: 10px;
+    flex-basis: 22%;
+    text-align: center;
+    margin: 5px;
+    font-size: 18px;
+    background: #f5d6d6;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.remove {
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-weight: 900;
+}
+
+#add-book {
+    left: 43px;
+    bottom: 11px;
+    position: fixed;
+    width: 349px;
+    opacity: .8;
+    background-color:  rgb(255, 102, 0);
+    font-size: 18px;
+    color: white;
+    padding: 16px 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 30px;
+    background: white;
+    border: 3px solid #f1f1f1;
+}
+
+.form-container {
+    max-width: 360px;
+    padding: 10px;
+}
+
+.form-container input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 5px 20px 0;
+    border: none;
+    background: #f5d6d6;
+    font-size: 18px;
+}
+::placeholder {
+    font-style: italic;
+}
+.form-container input[type=radio] {
+    margin-bottom: 15px;
+}
+
+.form-container input[type=text]:focus {
+    background-color: rgb(255, 144, 144);
+    outline: none;
+    color: white;
+    font-style: bold;
+}
+
+.form-container .btn {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 97%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
+  .form-container .btn:hover, #add-book:hover {
+    opacity: 1;
+  }
+
+  @media(max-width: 768px) {
+      .card {
+          flex-basis: 100%;
+      }
+
+      #myForm {
+          max-width: 85%;
+      }
+
+      #add-book {
+          width: 321px;
+      }
+      
+  }

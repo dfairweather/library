@@ -142,7 +142,7 @@ function saveLibrary() {
 // Load library from local storage
 
 function loadLibrary() {
-    if (JSON.parse(localStorage.myLibrary.length) > 0)
+    if (typeof localStorage.myLibrary !== "undefined") 
     {
         return JSON.parse(localStorage.myLibrary);
     } else {

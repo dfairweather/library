@@ -115,10 +115,28 @@ body {
 
       #myForm {
           max-width: 85%;
+          height: 50%;
+          font-size: .8em;
+          padding: 5px;
+          left: 20px;
       }
 
       #add-book {
-          width: 321px;
+          width: 300px;
+          left: 31px;
+          
       }
       
+      .header {
+          font-size: 1.5em;
+      }
+
+      .form-container .btn {
+          padding: 10px 5px 10px 10px;
+          width: 27%;
+          margin: 5px 5px 5x 0;
+      }
+      .form-container input[type="text"] {
+          padding: 5px;
+      }
   }

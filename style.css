@@ -12,7 +12,7 @@ body {
 }
 .container {
     display: flex;
-    width: 69%;
+    width: 68%;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -21,7 +21,7 @@ body {
     border: 4px solid rgb(46,48,48);
     border-radius: 6px;
     padding: 10px;
-    flex-basis: 22%;
+    flex-basis: 21%;
     text-align: center;
     margin: 5px;
     font-size: 18px;
